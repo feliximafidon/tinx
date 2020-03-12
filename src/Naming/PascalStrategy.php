@@ -3,6 +3,7 @@
 namespace Ajthinking\Tinx\Naming;
 
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 
 class PascalStrategy implements Strategy
 {
@@ -299,7 +300,7 @@ class PascalStrategy implements Strategy
      * */
     private function getSnakeName($model)
     {
-        return str_replace('\\', '_', snake_case($model->fullClassName));
+        return str_replace('\\', '_', Str::snake($model->fullClassName));
     }
 
     /**
@@ -310,7 +311,7 @@ class PascalStrategy implements Strategy
      * */
     private function splitPascalString($string)
     {
-        return preg_split('/_|(\d+)/u', snake_case($string), -1, PREG_SPLIT_DELIM_CAPTURE | PREG_SPLIT_NO_EMPTY);
+        return preg_split('/_|(\d+)/u', Str::snake($string), -1, PREG_SPLIT_DELIM_CAPTURE | PREG_SPLIT_NO_EMPTY);
     }
 
     /**
