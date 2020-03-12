@@ -1,9 +1,3 @@
-# ⛔️ Laravel Tinx (Deprecated)
-
-[![No Maintenance Intended](./readme/unmaintained.svg)](http://unmaintained.tech/)
-
-**Laravel Tinx** was archived on 12th December 2019 and is no longer maintained.
-
 Looking for a reloadable version of [Laravel Tinker](https://github.com/laravel/tinker)?
 
 Save the following script as `tinx.sh` to your project root directory:
