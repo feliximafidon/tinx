@@ -1,3 +1,7 @@
+### Updated version of Furey/Tinx
+[Link to the original package](https://github.com/furey/tinx)
+
+
 Looking for a reloadable version of [Laravel Tinker](https://github.com/laravel/tinker)?
 
 Save the following script as `tinx.sh` to your project root directory:
