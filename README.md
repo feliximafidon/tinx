@@ -64,7 +64,7 @@ Reload your session from inside Tinker, plus magic shortcuts for first(), find()
 To install Tinx, simply require it via Composer:
 
 ```bash
-composer require --dev ajthinking/tinx
+composer require --dev andrei930/tinx
 ```
 
 If using Laravel <=5.4, register Tinx's service provider in `config/app.php` (Laravel >=5.5 [does this automatically](https://laravel.com/docs/5.5/packages#package-discovery)):
