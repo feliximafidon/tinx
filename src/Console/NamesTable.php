@@ -3,6 +3,7 @@
 namespace Ajthinking\Tinx\Console;
 
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 
 class NamesTable
 {
@@ -131,7 +132,7 @@ class NamesTable
     {
         return sprintf(
             'No class shortcuts found for search %s [%s].',
-            str_plural('term', count($filters)),
+            Str::plural('term', count($filters)),
             implode(', ', $filters)
         );
     }
@@ -145,7 +146,7 @@ class NamesTable
         return sprintf(
             '%d %s found (to view shortcuts on boot, see: config/tinx.php > names_table_limit).',
             $totalNames,
-            str_plural('model', $totalNames)
+            Str::plural('model', $totalNames)
         );
     }
 
