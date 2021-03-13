@@ -49,7 +49,7 @@ class TinxCommand extends Command
             $this->setNames();
             $this->createTinxIncludes();
             $this->callTinker();
-        } while (State::forcedNoExit() || (State::shouldRestart() && !$this->info("Reloading your tinker session...")));
+        } while ((State::shouldRestart() && !$this->info("Reloading your tinker session...")));
 
         State::reset();
     }
