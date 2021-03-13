@@ -2,6 +2,7 @@
 
 use Ajthinking\Tinx\Console\State;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Schema;
 
 /**
  * Restarts Tinker.
